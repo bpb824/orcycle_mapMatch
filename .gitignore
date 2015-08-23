@@ -1,0 +1,4 @@
+*.pyc
+userSettings.json
+/results/*
+/data/*

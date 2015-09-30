@@ -54,7 +54,7 @@ def gmap(gps, route, gmap_path, case, trip_id, srid=4326, nextmap=None):
 ##                   .format(gmap_file, tripnum))
 
 #### USER SETTINGS ####
-with open('/Users/bblanc/OneDrive/_BikeAppProject/ORcycle_Analysis_Tool_Suite/mapMatch_Broach/userSettings.json') as data_file:
+with open('/Users/bblanc/OneDrive/_BikeAppProject/ORcycle_Analysis_Tool_Suite/orcycler_environment/mapMatching/userSettings.json') as data_file:
     userSettings = json.load(data_file)
 
 print(userSettings)
@@ -64,7 +64,7 @@ db_user = userSettings["db_credentials"]["db_user"]
 db_name = userSettings["db_credentials"]["db_name"]
 db_schema = userSettings["db_credentials"]["db_schema"]
 
-gps_path = 'data/coordsForMatch.csv'  # relative path to GPS points csv file
+gps_path = 'data/coordsForMatching.csv'  # relative path to GPS points csv file
 ## Network settings
 net_table = 'wbnet2012'  # network table
 net_sql = 'bik_rest != 1 '  # (optional) body of SQL where clause to select network links
